@@ -4,9 +4,9 @@ html,body,*{
   box-sizing: border-box;
   font-size: 62.5%;
 }
+/*put images in public folder*/
 :root {
   --light-blue: #2998ff;
-
   /*Typography*/
   --h1: 7.594rem;
   --h2: 5.063rem;

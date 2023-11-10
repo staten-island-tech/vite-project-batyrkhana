@@ -31,3 +31,10 @@ of their functions and how their project works
 Accessibility: use of semantic HTML,
 appropriate contrast, passes WAVE
 */
+
+/*
+
+open 
+
+cd project
+npm run dev
