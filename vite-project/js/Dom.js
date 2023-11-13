@@ -1,0 +1,4 @@
+const domSelectors = {
+
+}
+export {domSelectors};
