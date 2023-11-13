@@ -38,3 +38,44 @@ open
 
 cd project
 npm run dev
+
+
+
+
+
+
+
+
+
+Project Planning:
+
+Goal: Create a Vinyl shop
+Filter by: Song publishing date, price, condition, artist
+Themes: black, white, blue, red, green, yellow
+
+write 
+" nmp i "
+to install the node modules
+
+npm run dev (local version of the project)
+npm run serve (preview of the final version)
+npm run build (build a production version )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
