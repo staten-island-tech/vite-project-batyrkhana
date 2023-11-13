@@ -1,3 +1,3 @@
-import "../css/style.css";
-
-console.log(Menu,Name);
+import "../styles/style.css";
+import { vinyls } from "./vinyls";
+console.log(vinyls);
