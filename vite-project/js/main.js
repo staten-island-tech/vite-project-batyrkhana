@@ -1,19 +1,18 @@
 import "../styles/style.css";
 import { vinyls } from "./vinyls";
+import { domSelectors } from "./Dom";
 console.log(vinyls);
 
-function createAlbum() {
-    DOMSelectors.box.insertAdjacentHTML("beforeend",
+const createItem = function(vinyls) {
+    Dom.products.insertAdjacentHTML("beforeend",
   `<div class="create-album">
-      <img src=${DOMSelectors.albumImage.value} alt="Album Cover" class="card-img">
-      <h1 class="card-albumName">${DOMSelectors.albumName.value}</h1>
-      <h2 class="card-release">${DOMSelectors.albumReleaseDate.value}</h2>
-      <h3 class="card-artist">${DOMSelectors.albumArtist.value}</h3>
+      <img src=${vinyls.vinylURL} alt="Album Cover" class="card-img">
+      <h1 class="card-albumName">${vinyls.title}</h1>
+      <h2 class="card-vinylType">${vinyls.vinylType}</h2>
+      <h3 class="card-artist">${vinyls.artist}</h3>
       <button class="delete">DELETE</button>
     </div>`);
 }
-
-createAlbum();
 
 
 

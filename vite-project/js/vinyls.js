@@ -1,6 +1,5 @@
 /*TOTAL VINYL LIST HAS 40 VINYLS*/
 const vinyls = [
-    /*LIST OF 20 CLASSIC ROCK VINYL RECORDS*/
     {
         title: "Permanent Vacation (Red Limited Edition)",
         vinylType: "180-gram 1LP",
@@ -161,7 +160,6 @@ const vinyls = [
         genre: "Classic Rock",
         vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/stevemiller_joker_ce_vinyl_small_ec96f89e-8f58-4cf0-9897-2c6be76d7a21_medium.jpg?v=1583964256",
     },
-    /*LIST OF 20 COUNTRY VINYL RECORDS*/
     {
         title: "Tuesday Night Music Club (Blue Limited Edition)",
         vinylType: "1LP",
