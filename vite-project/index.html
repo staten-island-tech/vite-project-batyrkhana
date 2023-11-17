@@ -1,23 +1,36 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Note to self: Add some Google Font Styling in here-->
-    <title>Batyrkhan Bon Appe-Vite</title>
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Note to self: Add some Google Font Styling in here-->
+  <title>Batyrkhan Bon Appe-Vite</title>
+</head>
 <!--Note to Self: At the end of the project, don't forget to add some animations from the 3rd vid-->
-  <body class="theme-light">
-    <div class="main">
-      <h1 class="main-header">Vinyl Shop</h1>
-      <p class="main-description">Welcome to our Vinyl Shop! We can't wait to see what </p>
-      <div class="buttons">
+
+<body class="lightMode">
+  <div class="main">
+    <div class="main-header">
+      <h1 class="main-title">Bat's Vinyls</h1>
+      <p class="main-description">A Place of Wonder</p>
+    </div>
+    <div id="themeBtn">
+      <button type="submit" id="toggleTheme">Toggle Theme</button>
+    </div>
+    <div class="button-options">
+      <div class="button-filter-genre" id="genre-button">
         <button type="submit" class="buttons-button">All Vinyls</button>
         <button type="submit" class="buttons-button">Classic Rock</button>
         <button type="submit" class="buttons-button">Country</button>
       </div>
+      <div class="button-filter-price" id="price-button">
+        <p class="button">Filter by cost</p>
+      </div>
     </div>
-    <div class="products"></div>
-    <script type="module" src="./js/main.js"></script>
-  </body>
+    <div id="products"></div>
+  </div>
+  <script type="module" src="./js/main.js"></script>
+</body>
+
 </html>

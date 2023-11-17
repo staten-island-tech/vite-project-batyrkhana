@@ -1,4 +1,4 @@
-@import url(variables.css);
+@import url(products.css);
 html,body,*{
   margin:0;
   padding:0;
@@ -8,23 +8,42 @@ html,body,*{
 /*put images in public folder*/
 :root {
   --light-blue: #2998ff;
+  --white: #ffffff;
+  --green: #469f4f;
+  --gold: #dae396;
+  
   /*Typography*/
   --h1: 7.594rem;
   --h2: 5.063rem;
   --h3: 3.375rem;
   --h4: 2.250rem;
-  --h5: 1.500rem;
+  --h5: 1.850rem;
+  --h6: 1.500rem;
+  --h7: 1.250rem;
+  
   /*Intentions*/
-  --primary: var(--black)
-  --secondary: var(--white)
+  --primary: var(--white);
+  --secondary: var(--black);
 }
-.hero {
-  background-color: var(--primary);
+.main-header {
+  text-align: center;
+  font-size: var(--h1);
+  padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: italic;
+  font-family: 'Lora', serif;
+  position: relative;
+  background-color: red;
 }
-.main {
-  background-color: var(--secondary);
-  height: 90vh;
+#products {
+  box-shadow: 1rem 2rem 0.25rem; 
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
 }
+
+
 h1 {
   font-size: var(--h1);
 }
@@ -39,27 +58,4 @@ h4 {
 }
 h5 {
   font-size: var(--h5);
-}
-h1,h2,h3,h4,h5 {
-  text-align: center;
-} 
-.buttons {
-  background-color: red;
-  height: 10rem;
-}
-.main-description {
-  font-size: var(--h4);
-}
-.buttons-button {
-  padding: 1rem;
-  text-align: center;
-  border: 3px solid black;
-  border-radius: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: ghostwhite;
-  width: 20rem;
-  font-style: italic;
-  position: relative;
-  font-size: 2rem;
 }

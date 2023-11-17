@@ -1,4 +1,4 @@
-const domSelectors = {
-
+const DOMSelectors = {
+    products: document.getElementById("products"),
 }
-export {domSelectors};
+export {DOMSelectors};

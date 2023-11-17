@@ -1,0 +1,41 @@
+@import url(style.css);
+.product {
+    width: 24rem;
+    height: 44rem;
+    margin: 2rem;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--black);
+}
+.product-img {
+    object-fit: fill;
+    overflow: hidden;
+    width: 23.25rem;
+}
+.product-title {
+    font-size: var(--h5);
+    padding: 1rem;
+}
+.product-vinylType {
+    font-size: var(--h6);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: darkgrey;
+}
+.product-artist {
+    font-size: var(--h6);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: darkgrey;
+}
+.product-price {
+    font-size: var(--h5);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: black;
+}
+.product-genre {
+    font-size: var(--h5);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}

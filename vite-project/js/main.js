@@ -1,23 +1,23 @@
 import "../styles/style.css";
+import { DOMSelectors } from "./Dom";
 import { vinyls } from "./vinyls";
-console.log(vinyls);
+// import { domSelectors } from "./Dom";
 
-function createAlbum() {
-    DOMSelectors.box.insertAdjacentHTML("beforeend",
-  `<div class="create-album">
-      <img src=${DOMSelectors.albumImage.value} alt="Album Cover" class="card-img">
-      <h1 class="card-albumName">${DOMSelectors.albumName.value}</h1>
-      <h2 class="card-release">${DOMSelectors.albumReleaseDate.value}</h2>
-      <h3 class="card-artist">${DOMSelectors.albumArtist.value}</h3>
-      <button class="delete">DELETE</button>
-    </div>`);
+const createProduct = function(vinyls) {
+  vinyls.forEach((vinyl) => DOMSelectors.products.insertAdjacentHTML("beforeend",
+  ` <div class="product" id="products-all">
+    <img src="${vinyl.img}" alt="This is an image of ${vinyl.title}." class="product-img">
+    <h5 class="product-title">${vinyl.title}</h5>
+    <h6 class="product-vinylType">${vinyl.vinylType}</h6>
+    <h6 class="product-artist">${vinyl.artist}</h6>
+    <h6 class="product-genre">${vinyl.genre}</h6>
+    <h5 class="product-price">${vinyl.price}</h5>
+    </div>
+    `)
+  );
 }
 
-createAlbum();
-
-
-
-
+createProduct(vinyls);
 
 
 
