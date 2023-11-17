@@ -28,20 +28,23 @@ html,body,*{
 .main-header {
   text-align: center;
   font-size: var(--h1);
-  padding: 2rem;
+  padding: 1rem;
   margin-left: auto;
   margin-right: auto;
   font-style: italic;
   font-family: 'Lora', serif;
   position: relative;
-  background-color: red;
+  background-color: #fffecc;
+  border-bottom: 1rem;
+  border-bottom-style: solid;
+  border-width: 3px;
+  border-bottom-color: var(--black);
+  border-color: var(--black);
 }
-#products {
-  box-shadow: 1rem 2rem 0.25rem; 
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-evenly;
+.main-description {
+  font-size: var(--h4);
 }
+
 
 
 h1 {

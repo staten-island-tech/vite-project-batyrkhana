@@ -1,16 +1,23 @@
 @import url(style.css);
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 .product {
     width: 24rem;
     height: 44rem;
-    margin: 2rem;
+    margin: 0.5rem;
     border-style: solid;
     border-width: 3px;
     border-color: var(--black);
 }
 .product-img {
-    object-fit: fill;
     overflow: hidden;
-    width: 23.25rem;
+    object-fit: fill;
+    width: 23rem;
+    padding: 1rem;
 }
 .product-title {
     font-size: var(--h5);
