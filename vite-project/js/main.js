@@ -1,6 +1,7 @@
 import "../styles/style.css";
 import { DOMSelectors } from "./Dom";
 import { vinyls } from "./vinyls";
+
 // import { domSelectors } from "./Dom";
 
 const createProduct = function(vinyls) {
@@ -18,15 +19,3 @@ const createProduct = function(vinyls) {
 }
 
 createProduct(vinyls);
-
-
-
-
-
-
-
-
-
-
-
-
