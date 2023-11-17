@@ -6,7 +6,7 @@ const vinyls = [
         artist: "Aerosmith",
         price: "$29.98",
         genre: "Classic Rock",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/aerosmith_permvacay_sov_packshot_small_e3a26e7a-610f-4015-b22a-4d08799df01b_medium.jpg?v=1583964518",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/aerosmith_permvacay_sov_packshot_small_e3a26e7a-610f-4015-b22a-4d08799df01b_medium.jpg?v=1583964518",
     },
     {
         title: "Slippery When Wet",
@@ -14,7 +14,7 @@ const vinyls = [
         artist: "Bon Jovi",
         price: "$29.98",
         genre: "Classic Rock",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/files/bonjovi_slipperywhenwet_sov_small_0959a04b-6e41-4730-99ca-fef968bbcc0f_medium.jpg?v=1690581457",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/files/bonjovi_slipperywhenwet_sov_small_0959a04b-6e41-4730-99ca-fef968bbcc0f_medium.jpg?v=1690581457",
     },
     {
         title: "Greatest Hits",
@@ -22,7 +22,7 @@ const vinyls = [
         artist: "Tom Petty",
         price: "$37.99",
         genre: "Classic Rock",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/3383803_medium.jpg?v=1639519869",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/3383803_medium.jpg?v=1639519869",
     },
     {
         title: "Greatest Hits I",
@@ -30,7 +30,7 @@ const vinyls = [
         artist: "Queen",
         price: "$35.98",
         genre: "Classic Rock",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/3443147_499d01d9-b698-478f-8b70-88585d7546a8_medium.jpg?v=1635875261",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/3443147_499d01d9-b698-478f-8b70-88585d7546a8_medium.jpg?v=1635875261",
     },
     {
         title: "Rumours",
@@ -38,7 +38,7 @@ const vinyls = [
         artist: "Fleetwood Mac",
         price: "$44.98",
         genre: "Classic Rock",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/rumors_6fe4e1ac-b1dd-4b60-8734-ee02c11e255a_medium.png?v=1677628364",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/rumors_6fe4e1ac-b1dd-4b60-8734-ee02c11e255a_medium.png?v=1677628364",
     },
     {
         title: "The Grand Illusion - 40th Anniversary (Green Limited Edition)",
@@ -46,7 +46,7 @@ const vinyls = [
         artist: "Styx",
         price: "$29.99",
         genre: "Classic Rock",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/styx_grand_illusion_-_small_055261e4-59c8-4d7e-9585-edc63b0687b4_medium.jpg?v=1583964174",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/styx_grand_illusion_-_small_055261e4-59c8-4d7e-9585-edc63b0687b4_medium.jpg?v=1583964174",
     },
     {
         title: "Pop (Orange Limited Edition)",
@@ -54,7 +54,7 @@ const vinyls = [
         artist: "U2",
         price: "$38.98",
         genre: "Classic Rock",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/u2_pop_orange_small_0df28949-a923-415b-9e71-8f35d575571a_medium.jpg?v=1584735819",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/u2_pop_orange_small_0df28949-a923-415b-9e71-8f35d575571a_medium.jpg?v=1584735819",
     },
     {
         title: "Are You Experienced",
@@ -62,7 +62,7 @@ const vinyls = [
         artist: "Jimi Hendrix",
         price: "$17.98",
         genre: "Classic Rock",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/2545585_medium.jpg?v=1634684438",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/2545585_medium.jpg?v=1634684438",
     },
     {
         title: "Can't Buy A Thrill",
@@ -70,7 +70,7 @@ const vinyls = [
         artist: "Steely Dan",
         price: "$29.99",
         genre: "Classic Rock",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/SteelyDanCan_tBuyaThrill_medium.png?v=1662507011",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/SteelyDanCan_tBuyaThrill_medium.png?v=1662507011",
     },
     {
         title: "A Concert: Behind Prison Walls (Red Marble Limited Edition)",
@@ -78,7 +78,7 @@ const vinyls = [
         artist: "Johnny Cash",
         price: "$21.98",
         genre: "Classic Rock",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/MSVL834485_JCASH_BPW_LP_RBW_MOCK-2D_medium.png?v=1645797694",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/MSVL834485_JCASH_BPW_LP_RBW_MOCK-2D_medium.png?v=1645797694",
     },
     {
         title: "Step Into Christmas (Festive Green Limited Edition)",
@@ -86,7 +86,7 @@ const vinyls = [
         artist: "Elton John",
         price: "$14.98",
         genre: "Classic Rock",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/ej-7incopy_medium.png?v=1665705855",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/ej-7incopy_medium.png?v=1665705855",
     },
     {
         title: "Live At the Forum '76",
@@ -94,7 +94,7 @@ const vinyls = [
         artist: "Eagles",
         price: "$31.98",
         genre: "Classic Rock",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/4005825-2740106_medium.jpg?v=1637260959",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/4005825-2740106_medium.jpg?v=1637260959",
     },
     {
         title: "Let It Be Special Edition (Standard)",
@@ -102,7 +102,7 @@ const vinyls = [
         artist: "The Beatles",
         price: "$29.99",
         genre: "Classic Rock",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/RS108__1LP_LIB_3D-original_bf365765-1948-4c71-992a-862905d37cc0_medium.jpg?v=1629838992",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/RS108__1LP_LIB_3D-original_bf365765-1948-4c71-992a-862905d37cc0_medium.jpg?v=1629838992",
     },
     {
         title: "Countdown to Ecstasy",
@@ -110,7 +110,7 @@ const vinyls = [
         artist: "Steely Dan",
         price: "$29.99",
         genre: "Classic Rock",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/steely_medium.png?v=1680820969",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/steely_medium.png?v=1680820969",
     },
     {
         title: "Revolver Special Edition",
@@ -118,7 +118,7 @@ const vinyls = [
         artist: "The Beatles",
         price: "$29.99",
         genre: "Classic Rock",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/1LPvinylproductshot_Revolver-SpecialEdition_medium.png?v=1662497946",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/1LPvinylproductshot_Revolver-SpecialEdition_medium.png?v=1662497946",
     },
     {
         title: "Allman Brothers Band (Brown Limited Edition)",
@@ -126,7 +126,7 @@ const vinyls = [
         artist: "The Allman Brothers Band",
         price: "$38.98",
         genre: "Classic Rock",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/allmanbrosselftitled_sov_packshot_small_1_medium.jpg?v=1583964514",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/allmanbrosselftitled_sov_packshot_small_1_medium.jpg?v=1583964514",
     },
     {
         title: "Take Me Home Tonight - The Best of Eddie Money (Pink Limited Edition)",
@@ -134,7 +134,7 @@ const vinyls = [
         artist: "Eddie Money",
         price: "$21.98",
         genre: "Classic Rock",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/eddie_medium.png?v=1672881832",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/eddie_medium.png?v=1672881832",
     },
     {
         title: "Destroyer 45th Deluxe Edition",
@@ -142,7 +142,7 @@ const vinyls = [
         artist: "Kiss",
         price: "$37.99",
         genre: "Classic Rock",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/DeluxeEdition2LP_Black_medium.png?v=1632942079",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/DeluxeEdition2LP_Black_medium.png?v=1632942079",
     },
     {
         title: "Brothers And Sisters (Green Limited Edition)",
@@ -150,7 +150,7 @@ const vinyls = [
         artist: "The Allman Brothers Band",
         price: "$38.98",
         genre: "Classic Rock",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/allmanbros_brosandsisters_sov_packshot_small_1_medium.jpg?v=1583964510",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/allmanbros_brosandsisters_sov_packshot_small_1_medium.jpg?v=1583964510",
     },
     {
         title: "Joker (Lime Green Limited Edition)",
@@ -158,7 +158,7 @@ const vinyls = [
         artist: "Steve Miller Band",
         price: "$29.98",
         genre: "Classic Rock",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/stevemiller_joker_ce_vinyl_small_ec96f89e-8f58-4cf0-9897-2c6be76d7a21_medium.jpg?v=1583964256",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/stevemiller_joker_ce_vinyl_small_ec96f89e-8f58-4cf0-9897-2c6be76d7a21_medium.jpg?v=1583964256",
     },
     {
         title: "Tuesday Night Music Club (Blue Limited Edition)",
@@ -166,7 +166,7 @@ const vinyls = [
         artist: "Sheryl Crow",
         price: "$37.98",
         genre: "Country",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/TNMC-blue-lp_medium.png?v=1696607224"
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/TNMC-blue-lp_medium.png?v=1696607224"
     },
     {
         title: "Tuesday Night Music Club",
@@ -174,7 +174,7 @@ const vinyls = [
         artist: "Sheryl Crow",
         price: "$27.98",
         genre: "Country",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/TNMC-lp_medium.png?v=1696607222",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/TNMC-lp_medium.png?v=1696607222",
     },
     {
         title: "Greatest Hits (Opaque Baby Blue Limited Edition)",
@@ -182,7 +182,7 @@ const vinyls = [
         artist: "Shania Twain",
         price: "$39.98",
         genre: "Country",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/files/cut1copy_medium.png?v=1695905174",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/files/cut1copy_medium.png?v=1695905174",
     },
     {
         title: "100% Songwriter (Red Limited Edition)",
@@ -190,7 +190,7 @@ const vinyls = [
         artist: "Toby Keith",
         price: "$29.99",
         genre: "Country",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/100_-songwriter-red-lp_medium.png?v=1695226422",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/100_-songwriter-red-lp_medium.png?v=1695226422",
     },
     {
         title: "Greatest Hits (Marble White Limited Edition)",
@@ -198,7 +198,7 @@ const vinyls = [
         artist: "Patsy Cline",
         price: "$29.99",
         genre: "Country",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/files/patsy-cline-marble-white_medium.png?v=1699291325",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/files/patsy-cline-marble-white_medium.png?v=1699291325",
     },
     {
         title: "Red (Taylor's Version)",
@@ -206,7 +206,7 @@ const vinyls = [
         artist: "Taylor Swift",
         price: "$49.99",
         genre: "Country",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/4020845-2758936_medium.png?v=1643142302",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/4020845-2758936_medium.png?v=1643142302",
     },
     {
         title: "Rainbow Connection (Translucent Orange Limited Edition)",
@@ -214,7 +214,7 @@ const vinyls = [
         artist: "Willie Nelson",
         price: "$32.99",
         genre: "Country",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/rainbow-connection-orange-lp_medium.png?v=1695668300",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/rainbow-connection-orange-lp_medium.png?v=1695668300",
     },
     {
         title: "Traveller",
@@ -222,7 +222,7 @@ const vinyls = [
         artist: "Chris Stapleton",
         price: "$32.99",
         genre: "Country",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/2849117_medium.jpg?v=1634752841",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/2849117_medium.jpg?v=1634752841",
     },
     {
         title: "A Concert: Behind Prison Walls (Red Marble Limited Edition)",
@@ -230,7 +230,7 @@ const vinyls = [
         artist: "Johnny Cash",
         price: "$21.98",
         genre: "Country",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/MSVL834485_JCASH_BPW_LP_RBW_MOCK-2D_medium.png?v=1645797694",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/MSVL834485_JCASH_BPW_LP_RBW_MOCK-2D_medium.png?v=1645797694",
     },
     {
         title: "The Woman In Me: Diamond Edition (Crystal Clear Limited Edition)",
@@ -238,7 +238,7 @@ const vinyls = [
         artist: "Shania Twain",
         price: "$29.99",
         genre: "Country",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/TheWomenInMe_clear_3D_Packshots_medium.jpg?v=1599065400",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/TheWomenInMe_clear_3D_Packshots_medium.jpg?v=1599065400",
     },
     {
         title: "Milk Cow Blues (Orange Limited Edition)",
@@ -246,7 +246,7 @@ const vinyls = [
         artist: "Willie Nelson",
         price: "$37.99",
         genre: "Country",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/files/WN_MilkCowBlues_productshot_stickers_173_medium.png?v=1684339198",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/files/WN_MilkCowBlues_productshot_stickers_173_medium.png?v=1684339198",
     },
     {
         title: "Greatest Hits",
@@ -254,7 +254,7 @@ const vinyls = [
         artist: "Shania Twain",
         price: "$37.99",
         genre: "Country",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/files/black-2lp_medium.png?v=1695905816",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/files/black-2lp_medium.png?v=1695905816",
     },
     {
         title: "It Always Will Be (Translucent Ruby Limited Edition)",
@@ -262,7 +262,7 @@ const vinyls = [
         artist: "Willie Nelson",
         price: "$32.99",
         genre: "Country",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/it-will-always-be-red-lp_medium.png?v=1695668297",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/it-will-always-be-red-lp_medium.png?v=1695668297",
     },
     {
         title: "Spirit (Clear Limited Edition)",
@@ -270,7 +270,7 @@ const vinyls = [
         artist: "Willie Nelson",
         price: "$32.99",
         genre: "Country",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/files/Willie_Nelson_TSpirit_product_shot_clear_medium.png?v=1684363556",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/files/Willie_Nelson_TSpirit_product_shot_clear_medium.png?v=1684363556",
     },
     {
         title: "Come On Over (Diamond Edition)",
@@ -278,7 +278,7 @@ const vinyls = [
         artist: "Shania Twain",
         price: "$37.99",
         genre: "Country",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/shania-2lp-black_medium.png?v=1689253732",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/shania-2lp-black_medium.png?v=1689253732",
     },
     {
         title: "Twang",
@@ -286,7 +286,7 @@ const vinyls = [
         artist: "George Strait",
         price: "$21.98",
         genre: "Country",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/1545854_088b66d4-0a2c-4290-a8a4-dfc0eda1ed30_medium.jpg?v=1621501822",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/1545854_088b66d4-0a2c-4290-a8a4-dfc0eda1ed30_medium.jpg?v=1621501822",
     },
     {
         title: "The Great Divide (Clear Limited Edition)",
@@ -294,7 +294,7 @@ const vinyls = [
         artist: "Willie Nelson",
         price: "$29.99",
         genre: "Country",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/files/TheGreatDivideecommercepackshot_1_medium.png?v=1684262535",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/files/TheGreatDivideecommercepackshot_1_medium.png?v=1684262535",
     },
     {
         title: "Poems Prayers & Promises",
@@ -302,7 +302,7 @@ const vinyls = [
         artist: "John Denver",
         price: "$21.98",
         genre: "Country",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/3969233-2708166_medium.jpg?v=1627948716",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/3969233-2708166_medium.jpg?v=1627948716",
     },
     {
         title: "Legend of Johnny Cash",
@@ -310,7 +310,7 @@ const vinyls = [
         artist: "Johnny Cash",
         price: "$34.98",
         genre: "Country",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/2597463_c367551a-446e-4bd2-8cab-9453e79d1370_medium.jpg?v=1620120805",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/2597463_c367551a-446e-4bd2-8cab-9453e79d1370_medium.jpg?v=1620120805",
     },
     {
         title: "American IV: The Man Comes Around",
@@ -318,7 +318,7 @@ const vinyls = [
         artist: "Johnny Cash",
         price: "$37.99",
         genre: "Country",
-        vinylURL: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/UMG_DoubleVinyl_Template_5_copy_medium.png?v=1669934823",
+        img: "https://cdn.shopify.com/s/files/1/0287/4323/7725/products/UMG_DoubleVinyl_Template_5_copy_medium.png?v=1669934823",
     },
 ];
 
