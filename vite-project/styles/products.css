@@ -24,24 +24,28 @@
     font-size: var(--h5);
     padding: 1rem;
     color: var(--productTextColor);
+    font-family: 'Cabin', sans-serif;
 }
 .product-vinylType {
     font-size: var(--h6);
     padding-left: 1rem;
     padding-right: 1rem;
     color: var(--productTextColor);
+    font-family: 'Cabin', sans-serif;
 }
 .product-artist {
     font-size: var(--h6);
     padding-left: 1rem;
     padding-right: 1rem;
     color: var(--productTextColor);
+    font-family: 'Cabin', sans-serif;
 }
 .product-price {
     font-size: var(--h5);
     padding-left: 1rem;
     padding-right: 1rem;
     color: var(--productTextColor);
+    font-family: 'Cabin', sans-serif;
 }
 .product-genre {
     font-size: var(--h5);
@@ -49,4 +53,5 @@
     padding-right: 1rem;
     padding-bottom: 1rem;
     color: var(--productTextColor);
+    font-family: 'Cabin', sans-serif;
 }

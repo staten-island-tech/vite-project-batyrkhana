@@ -58,8 +58,7 @@ html,body,*{
 .main-header-text {
   text-align: center;
   font-size: var(--h1);
-  font-style: italic;
-  font-family: 'Lora', serif;
+  font-family: 'Cabin', sans-serif;
 }
 .main-header {
   padding: 1rem;
@@ -97,4 +96,10 @@ h4 {
 }
 h5 {
   font-size: var(--h5);
+}
+h6 {
+  font-size: var(--h6);
+}
+h7 {
+  font-size: var(--h7);
 }
