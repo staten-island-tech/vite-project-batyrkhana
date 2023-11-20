@@ -9,23 +9,27 @@
 </head>
 <!--Note to Self: At the end of the project, don't forget to add some animations from the 3rd vid-->
 
-<body class="lightMode">
+<body class="light">
   <div class="main">
     <div class="main-header">
-      <h1 class="main-title">Bat's Vinyls</h1>
-      <p class="main-description">A Place of Wonder</p>
-    </div>
-    <div id="themeBtn">
-      <button type="submit" id="toggleTheme">Toggle Theme</button>
-    </div>
-    <div class="button-options">
-      <div class="button-filter-genre" id="genre-button">
-        <button type="submit" class="buttons-button">All Vinyls</button>
-        <button type="submit" class="buttons-button">Classic Rock</button>
-        <button type="submit" class="buttons-button">Country</button>
+      <div class="main-header-text">
+        <h1 class="header-title">Bat's Vinyls</h1>
+        <p class="header-description">A Place of Wonder</p>
       </div>
-      <div class="button-filter-price" id="price-button">
-        <p class="button">Filter by cost</p>
+      <img src="img/transparent-bat.png" class="mainBatPicture" alt="Trasparent bat image">
+    </div>
+    <div class="main-buttons">
+      <div class="buttons-theme">
+        <button type="submit" class="theme-button" id="changeTheme">Change Theme</button>
+      </div>
+      <div class="buttons-filter-genre" id="genreButton">
+        <button type="submit" class="genre-button" id="allVinyls">All Vinyls</button>
+        <button type="submit" class="genre-button" id="classicRock">Classic Rock</button>
+        <button type="submit" class="genre-button" id="country">Country</button>
+      </div>
+      <div class="buttons-filter-price" id="priceButton">
+        <button type="submit" class="price-button" id="priceHighLo">High To Low</button>
+        <button type="submit" class="price-button" id="priceLowHi">Low To High</button>
       </div>
     </div>
     <div id="products"></div>

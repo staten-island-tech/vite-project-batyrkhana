@@ -1,0 +1,50 @@
+@import url(products.css);
+@import url(style.css);
+
+.main-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.buttons-theme {
+    position: relative;
+}
+.buttons-filter-genre {
+    position: relative;
+}
+.buttons-filter-price {
+    position: relative;
+}
+.theme-button {
+    font-size: 2rem;
+    background-color: var(--buttonBackgroundColor);
+    width: 15rem;
+    height: 4rem;
+    border-color: var(--buttonBorderColor);
+    color: var(--buttonTextColor);
+    border: solid;
+    border-radius: 0.5rem;
+    border-width: 0.2rem;
+}
+.genre-button {
+    font-size: 2rem;
+    background-color: var(--buttonBackgroundColor);
+    width: 15rem;
+    height: 4rem;
+    border-color: var(--buttonBorderColor);
+    color: var(--buttonTextColor);
+    border: solid;
+    border-radius: 0.5rem;
+    border-width: 0.2rem;
+}
+.price-button{
+    font-size: 2rem;
+    background-color: var(--buttonBackgroundColor);
+    width: 15rem;
+    height: 4rem;
+    border-color: var(--buttonBorderColor);
+    color: var(--buttonTextColor);
+    border: solid;
+    border-radius: 0.5rem;
+    border-width: 0.2rem;
+}
