@@ -2,40 +2,41 @@ import "../styles/style.css";
 import { DOMSelectors } from "./Dom";
 import { vinyls } from "./vinyls";
 
-// 1. Creates a vinyl card
+// 1. Create Starting Array
 
-const createProduct = function(vinyls) {
-  vinyls.forEach((vinyl) => DOMSelectors.products.insertAdjacentHTML("beforeend",
+const VinylCreate = function(vinyls) {
+  DOMSelectors.products.insertAdjacentHTML("beforeend",
   ` <div class="product" id="products-all">
-    <img src="${vinyl.img}" alt="This is an image of ${vinyl.title}." class="product-img">
-    <h5 class="product-title">${vinyl.title}</h5>
-    <h6 class="product-vinylType">${vinyl.vinylType}</h6>
-    <h6 class="product-artist">${vinyl.artist}</h6>
-    <h6 class="product-genre">${vinyl.genre}</h6>
-    <h5 class="product-price">${vinyl.price}</h5>
+    <img src="${vinyls.img}" alt="This is an image of ${vinyls.title}." class="product-img">
+    <h5 class="product-title">${vinyls.title}</h5>
+    <h6 class="product-vinylType">${vinyls.vinylType}</h6>
+    <h6 class="product-artist">${vinyls.artist}</h6>
+    <h6 class="product-genre">${vinyls.genre}</h6>
+    <h5 class="product-price">$${vinyls.price}</h5>
     </div>
     `)
-  )
 };
 console.log(vinyls);
-createProduct(vinyls);
+vinyls.forEach((vinyl)=>VinylCreate(vinyl));
 
 // 2. Changes the Theme from Dark Mode to Light Mode
 
 DOMSelectors.changeTheme.addEventListener ("click", function(){
-  console.log("works")
   if (document.body.classList.contains("light")) {
       document.body.classList.add("dark");
       document.body.classList.remove("light");
-  }
-  else {
+      document.body.mainbuttons
+  } else {
       document.body.classList.add("light");
       document.body.classList.remove("dark");
   }
 });
-// 3. Creates a map array for each 
-const mapVinyls = function () {
-  vinyls.map((vinyl)=> ({
+
+
+// 3. Framework for what each element in an array is supposed to look like
+
+const filteredArray = function () {
+  vinyls.map((vinyl) => ({
     title: vinyl.title,
     vinylType: vinyl.vinylType,
     artist: vinyl.artist,
@@ -44,4 +45,70 @@ const mapVinyls = function () {
     img: vinyl.img,
   }))
 };
-console
+
+// 4. Deletes array
+
+const deleteVinyl = function () {
+  document.querySelectorAll("#products-all")
+  .forEach((vinyl) => vinyl.remove());
+};
+
+export {VinylCreate,filteredArray,deleteVinyl};
+const productFilters = {
+  filterAllVinyls: function () {
+    DOMSelectors.allVinyls.addEventListener("click", function () {
+      deleteVinyl();
+      filteredArray();
+      vinyls.forEach((vinyl) => {
+        console.log(`${vinyl.title} by ${vinyl.artist}`);
+        VinylCreate(vinyl);
+      });
+    });
+  },
+  filterClassicRock: function () {
+    DOMSelectors.classicRock.addEventListener("click", function () {
+      deleteVinyl();
+      filteredArray();
+      vinyls.filter((vinyl) => vinyl.genre.includes("Classic Rock")).forEach((vinyl) => {
+        console.log(`${vinyl.title} by ${vinyl.artist}`);
+        VinylCreate(vinyl);
+      });
+    });
+  },
+  filterCountry: function () {
+    DOMSelectors.country.addEventListener("click", function () {
+      deleteVinyl();
+      filteredArray();
+      vinyls.filter((vinyl) => vinyl.genre.includes("Country")).forEach((vinyl) => {
+        console.log(`${vinyl.title} by ${vinyl.artist}`);
+        VinylCreate(vinyl);
+      });
+    });
+  },
+  filterHilo: function () {
+    DOMSelectors.priceHighLo.addEventListener("click", function () {
+      deleteVinyl();
+      filteredArray();
+      vinyls.sort((a, b) => b.price - a.price).forEach((vinyl) => {
+        console.log(`${vinyl.title} by ${vinyl.artist}, ${vinyl.price}`);
+        VinylCreate(vinyl);
+      });
+    });
+  },
+  filterLohi: function () {
+    DOMSelectors.priceLowHi.addEventListener("click", function () {
+      deleteVinyl();
+      filteredArray();
+      vinyls.sort((a, b) => a.price - b.price).forEach((vinyl) => {
+        console.log(`${vinyl.title} by ${vinyl.artist}, ${vinyl.price}`);
+        VinylCreate(vinyl);
+      });
+    });
+  },
+};
+
+productFilters.filterAllVinyls();
+productFilters.filterClassicRock();
+productFilters.filterCountry();
+productFilters.filterHilo();
+productFilters.filterLohi();
