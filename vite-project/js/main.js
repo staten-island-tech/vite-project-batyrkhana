@@ -2,7 +2,7 @@ import "../styles/style.css";
 import { DOMSelectors } from "./Dom";
 import { vinyls } from "./vinyls";
 
-// import { domSelectors } from "./Dom";
+// 1. Creates a vinyl card
 
 const createProduct = function(vinyls) {
   vinyls.forEach((vinyl) => DOMSelectors.products.insertAdjacentHTML("beforeend",
@@ -15,7 +15,33 @@ const createProduct = function(vinyls) {
     <h5 class="product-price">${vinyl.price}</h5>
     </div>
     `)
-  );
-}
-
+  )
+};
+console.log(vinyls);
 createProduct(vinyls);
+
+// 2. Changes the Theme from Dark Mode to Light Mode
+
+DOMSelectors.changeTheme.addEventListener ("click", function(){
+  console.log("works")
+  if (document.body.classList.contains("light")) {
+      document.body.classList.add("dark");
+      document.body.classList.remove("light");
+  }
+  else {
+      document.body.classList.add("light");
+      document.body.classList.remove("dark");
+  }
+});
+// 3. Creates a map array for each 
+const mapVinyls = function () {
+  vinyls.map((vinyl)=> ({
+    title: vinyl.title,
+    vinylType: vinyl.vinylType,
+    artist: vinyl.artist,
+    price: vinyl.price,
+    genre: vinyl.genre,
+    img: vinyl.img,
+  }))
+};
+console
