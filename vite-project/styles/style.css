@@ -70,7 +70,6 @@ html,body,*{
   border-width: 3px;
   border-bottom-color: var(--black);
   border-color: var(--black);
-  width: 50 rem;
   position: relative;
   display: flex;
   justify-content: center;
