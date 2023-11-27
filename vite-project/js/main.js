@@ -53,7 +53,6 @@ const deleteVinyl = function () {
   .forEach((vinyl) => vinyl.remove());
 };
 
-export {VinylCreate,filteredArray,deleteVinyl};
 const productFilters = {
   filterAllVinyls: function () {
     DOMSelectors.allVinyls.addEventListener("click", function () {
