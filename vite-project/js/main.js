@@ -54,29 +54,29 @@ const deleteVinyl = function () {
 };
 
 //get all buttons for genre filter as array/nodelist
-let buttons = document.querySelectorAll(".genre-button")
 //add click handler for each button
-buttons.forEach((btn)=> btn.addEventListener("click", 
+let priceButtons = document.querySelectorAll(".price-button")
+priceButtons.forEach((btn)=> btn.addEventListener("click", function(vinyl){
+  deleteVinyl(vinyl);
+  filteredArray(vinyl);
+  if (btn == priceButtons[0]) {
+    vinyls.sort((a, b) => b.price - a.price).forEach((vinyl) => VinylCreate(vinyl))
+  } else {
+    vinyls.sort((a, b) => a.price - b.price).forEach((vinyl) => VinylCreate(vinyl))
+  }
+}));
 
-function(vinyl){
+let buttons = document.querySelectorAll(".genre-button")
+buttons.forEach((btn)=> btn.addEventListener("click", function(vinyl){
   //if btn == buttons[0] then call all vinyl
   //gets textcontent of clicked button
-  deleteVinyl(vinyl);
+  // filter the vinyl array based on the button clicked (filter)
   let filter = btn.textContent
+  deleteVinyl(vinyl);
   filteredArray(vinyl);
   if (btn == buttons[0]) {
-    vinyls.forEach((vinyl) => {VinylCreate(vinyl)})
-  } else if (btn == buttons[4]) {
-    vinyls.sort((a, b) => b.price - a.price).forEach((vinyl) => VinylCreate(vinyl))
+    vinyls.forEach((vinyl) => VinylCreate(vinyl))
+  } else {
+    vinyls.filter((vinyl) => vinyl.genre.includes(filter)).forEach((vinyl)=>VinylCreate(vinyl));
   }
-    
-  vinyls.filter((vinyl) => vinyl.genre.includes(filter)).forEach((vinyl)=>VinylCreate(vinyl));
-
-  // filter the vinyl array based on the button clicked (filter)
-
-  
-  
-}
-
-
-));
+}));
