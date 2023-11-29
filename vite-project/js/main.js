@@ -61,15 +61,20 @@ buttons.forEach((btn)=> btn.addEventListener("click",
 function(vinyl){
   //if btn == buttons[0] then call all vinyl
   //gets textcontent of clicked button
+  deleteVinyl(vinyl);
   let filter = btn.textContent
-  deleteVinyl()
+  filteredArray(vinyl);
   if (btn == buttons[0]) {
-    VinylCreate(vinyl);
+    vinyls.forEach((vinyl) => {VinylCreate(vinyl)})
+  } else if (btn == buttons[4]) {
+    vinyls.sort((a, b) => b.price - a.price).forEach((vinyl) => VinylCreate(vinyl))
   }
+    
+  vinyls.filter((vinyl) => vinyl.genre.includes(filter)).forEach((vinyl)=>VinylCreate(vinyl));
 
   // filter the vinyl array based on the button clicked (filter)
 
-  vinyls.filter((vinyl) => vinyl.genre.includes(filter)).forEach((vinyl)=>VinylCreate(vinyl))
+  
   
 }
 
