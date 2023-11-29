@@ -53,62 +53,30 @@ const deleteVinyl = function () {
   .forEach((vinyl) => vinyl.remove());
 };
 
-export {VinylCreate,filteredArray,deleteVinyl};
-const productFilters = {
-  filterAllVinyls: function () {
-    DOMSelectors.allVinyls.addEventListener("click", function () {
-      deleteVinyl();
-      filteredArray();
-      vinyls.forEach((vinyl) => {
-        console.log(`${vinyl.title} by ${vinyl.artist}`);
-        VinylCreate(vinyl);
-      });
-    });
-  },
-  filterClassicRock: function () {
-    DOMSelectors.classicRock.addEventListener("click", function () {
-      deleteVinyl();
-      filteredArray();
-      vinyls.filter((vinyl) => vinyl.genre.includes("Classic Rock")).forEach((vinyl) => {
-        console.log(`${vinyl.title} by ${vinyl.artist}`);
-        VinylCreate(vinyl);
-      });
-    });
-  },
-  filterCountry: function () {
-    DOMSelectors.country.addEventListener("click", function () {
-      deleteVinyl();
-      filteredArray();
-      vinyls.filter((vinyl) => vinyl.genre.includes("Country")).forEach((vinyl) => {
-        console.log(`${vinyl.title} by ${vinyl.artist}`);
-        VinylCreate(vinyl);
-      });
-    });
-  },
-  filterHilo: function () {
-    DOMSelectors.priceHighLo.addEventListener("click", function () {
-      deleteVinyl();
-      filteredArray();
-      vinyls.sort((a, b) => b.price - a.price).forEach((vinyl) => {
-        console.log(`${vinyl.title} by ${vinyl.artist}, ${vinyl.price}`);
-        VinylCreate(vinyl);
-      });
-    });
-  },
-  filterLohi: function () {
-    DOMSelectors.priceLowHi.addEventListener("click", function () {
-      deleteVinyl();
-      filteredArray();
-      vinyls.sort((a, b) => a.price - b.price).forEach((vinyl) => {
-        console.log(`${vinyl.title} by ${vinyl.artist}, ${vinyl.price}`);
-        VinylCreate(vinyl);
-      });
-    });
-  },
-};
+//get all buttons for genre filter as array/nodelist
+//add click handler for each button
+let priceButtons = document.querySelectorAll(".price-button")
+priceButtons.forEach((btn)=> btn.addEventListener("click", function(vinyl){
+  deleteVinyl(vinyl);
+  filteredArray(vinyl);
+  if (btn == priceButtons[0]) {
+    vinyls.sort((a, b) => b.price - a.price).forEach((vinyl) => VinylCreate(vinyl))
+  } else {
+    vinyls.sort((a, b) => a.price - b.price).forEach((vinyl) => VinylCreate(vinyl))
+  }
+}));
 
-productFilters.filterAllVinyls();
-productFilters.filterClassicRock();
-productFilters.filterCountry();
-productFilters.filterHilo();
-productFilters.filterLohi();
+let buttons = document.querySelectorAll(".genre-button")
+buttons.forEach((btn)=> btn.addEventListener("click", function(vinyl){
+  //if btn == buttons[0] then call all vinyl
+  //gets textcontent of clicked button
+  // filter the vinyl array based on the button clicked (filter)
+  let filter = btn.textContent
+  deleteVinyl(vinyl);
+  filteredArray(vinyl);
+  if (btn == buttons[0]) {
+    vinyls.forEach((vinyl) => VinylCreate(vinyl))
+  } else {
+    vinyls.filter((vinyl) => vinyl.genre.includes(filter)).forEach((vinyl)=>VinylCreate(vinyl));
+  }
+}));
